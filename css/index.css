@@ -1,0 +1,397 @@
+/*      ENCABEZADO CHIDO      */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+font-family: sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: #f7efd8;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 100 0;
+}
+
+/*      menu hamburguesa     */
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: #c84d4d;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #333128;
+    display: block;
+    font-weight: 600;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+/*      carrito     */
+.submenu{
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4E4B5076;
+    padding: 20px;
+    min-width: 400px;
+}
+
+table{
+    width: 100%;
+}
+
+th, td{
+    color: #FFFFFF;
+}
+
+.borrar{
+    background-color: #c84d4d;
+    border-radius: 50px;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.header-content{
+    display: flex;
+}
+
+.header-txt{
+    flex-basis: 50%;
+}
+
+.header-txt span{
+    font-size: 16px;
+    color: #333128;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.header-txt h1{
+    font-size: 55px;
+    line-height: 1;
+    color: #333128;
+    margin-bottom: 25px;
+}
+
+p{
+    font-size: 16px;
+    color: #181713;
+    margin-bottom: 45px;
+}
+
+.header-img{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.header-img img{
+    width: 400px;
+}
+
+
+/*      MENU DE PIZZAS      */
+
+.products{
+    padding: 0 0 100px 0;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.products h2{
+    font-size: 40px;
+    color: #181713;
+    text-transform: capitalize;
+    margin-bottom: 55px;
+}
+
+.product-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.product{
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 35px;
+}
+
+.product img{
+    width: 150px;
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.product h3{
+    color: #c84d4d;
+}
+
+.product p{
+    font-size: 15px;
+    margin: 0;
+    color: #181713;
+    font-weight: 600;
+}
+
+.btn-2{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px 25px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #c84d4d;
+}
+
+
+/*      UBICACION      */
+
+#ubicacion {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.ubicacion-info {
+    flex: 2; 
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding: 20px;
+}
+
+.ubicacion-info iframe {
+    width: 100%;
+    height: 450px;
+}
+
+.ubicacion-text {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.ubicacion-text h1 {
+    font-size: 40px;
+    color: #181713;
+    text-transform: capitalize;
+    margin-bottom: 55px;
+}
+
+.ubicacion-text p {
+    font-size: 18px;
+    color: #666; 
+}
+
+
+/*      FOOTER      */
+
+.footer {
+    padding: 50px 0;
+    background-color:  #f7efd8;
+}
+.footer h1 {
+    font-size: 40px;
+    color: #181713;
+    text-transform: capitalize;
+    margin-bottom: 55px;
+    text-align: center;
+}
+.footer-content {
+    padding: 0 0 100px 0;
+    padding-top: 30px;
+}
+.footer-content .social-link {
+    display: inline-block;
+    margin-left: 100px;
+    margin-right: 100px
+}
+.footer-content .social-link img {
+    width: 70px; 
+    height: auto;
+    margin-right: 25px;
+    transition: all ease 100ms;
+}
+.footer-content .social-link img:hover {
+    transform: scale(1.2);
+}
+.footer-content .social-link span {
+    font-size: 18px; 
+    color: #181713;
+}
+
+
+
+
+/*      MOBILE FRIENDLY      */
+
+@media(max-width:991px){
+
+
+    /*      Encabezado      */
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #303030;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    .menu .navbar ul li a{
+        color: #FFFFFF;
+    }
+    .logo{
+        display: none;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .submenu:hover #carrito{
+        min-width: 340px;
+    }
+    .header{
+        min-height: 0vh;
+        padding: 100px 30px;
+    }
+    .header-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-txt{
+        margin-bottom: 20px;
+    }
+    .header-img img{
+        width: 300px;
+    }
+    
+
+    /*      menu pizzas      */
+    .products{
+        padding: 30px;
+    }
+    .product-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    /*      ubicacion      */
+    #ubicacion {
+        flex-direction: column-reverse; 
+    }
+
+    .ubicacion-info {
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+
+    .ubicacion-text {
+        text-align: center; 
+    }
+
+
+    /*      footer      */
+    .footer{
+        padding: 30px;
+    }
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-content .social-link{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
